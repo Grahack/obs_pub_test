@@ -28,7 +28,7 @@
     {%- endif -%}
 </ul>
 {%- endif -%}
-{%- include toc.html -%}
+{% include toc.html html=content %}
 <div class="content">
     {%- assign content_array = content | split:'[[' -%}
     {%- assign external_link_delimiter = '::' -%}
