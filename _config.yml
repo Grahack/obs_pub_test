@@ -8,7 +8,7 @@ favicon: /assets/site/favicon.png
 logo: /assets/site/profile.png
 copyright_name: MIT
 baseurl: /
-url: https://owlly-house.netlify.app/
+url: https://grahack.github.io/obs_pub_test
 encoding: utf-8
 theme: null
 plugins:
