@@ -1,6 +1,6 @@
 {% for collection in site.collections %}
     {%- if collection.label != "private" and collection.label != "posts" -%}
-        {%- assign docs = "/" | append: collection.label -%}
+        {%- assign docs = site.url | append: "/" | append: collection.label -%}
         <details class="{{collection.label}}">
             <summary class="{{collection.label}}"><a href="{{ docs }}">{{
                 collection.label |
