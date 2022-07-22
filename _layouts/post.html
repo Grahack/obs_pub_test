@@ -13,14 +13,14 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
 	
     <link rel="icon" href="{{site.favicon}}" type="image/png"/>
-    <link href="assets/css/style.css" rel="stylesheet" media="all" class="default"/>
-	<link rel="stylesheet" href="assets/css/highlight.css">
-	<link rel="stylesheet" href="assets/css/image_flags.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
+    <link href="{{ site.url}}/assets/css/style.css" rel="stylesheet" media="all" class="default"/>
+	<link rel="stylesheet" href="{{ site.url}}/assets/css/highlight.css">
+	<link rel="stylesheet" href="{{ site.url}}/assets/css/image_flags.css">
+    <link rel="stylesheet" href="{{ site.url}}/assets/css/custom.css">
     <!--[if IE]>
-        <link href="assets/css/ie-target.css" rel="stylesheet" type="text/css"/>
+        <link href="{{ site.url}}/assets/css/ie-target.css" rel="stylesheet" type="text/css"/>
     <![endif]-->
-    <!--<link href="assets/css/prism.css" rel="stylesheet" />-->
+    <!--<link href="{{ site.url}}/assets/css/prism.css" rel="stylesheet" />-->
     <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml">
     <meta name="description" content="{{ site.user_description }}">
     <meta content="{{site.name}}" property="og:site_name">
@@ -88,7 +88,7 @@
     </div>
         <div class="avatar disable-select" title="POUIC !">
         <a class="avatar-link" href="/">
-            <img src="assets/site/profile.png" class="avatar-img" alt="avatar"/>
+            <img src="{{ site.url}}/assets/site/profile.png" class="avatar-img" alt="avatar"/>
         </a>
 
     </div>
@@ -157,7 +157,7 @@
         }
     </script>
     {%- if page.title != "Collections" -%}
-	    <script type="text/javascript" src="../assets/js/summary.js"></script>
+	    <script type="text/javascript" src="{{ site.url}}/assets/js/summary.js"></script>
     {%- endif -%}
     {%- include contextmenu.html -%}
 	{%- include text-expand.html -%}
